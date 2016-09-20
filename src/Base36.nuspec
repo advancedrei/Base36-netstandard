@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata minClientVersion="2.8.1">
+    <id>Base36</id>
+    <version>1.0.0</version>
+    <title>Base36</title>
+    <authors>Robert McLaws, Steve Barker</authors>
+    <owners>AdvancedREI</owners>
+    <licenseUrl>http://choosealicense.com/licenses/mit/</licenseUrl>
+    <projectUrl>http://github.com/AdvancedREI/Base36-netstandard</projectUrl>
+    <iconUrl>https://avatars3.githubusercontent.com/u/21149665</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A library for implementing the Base36 algorithm used by URL Shorteners. For .NET STandard 1.0 and greater.</description>
+    <releaseNotes>1.0.0: First release.</releaseNotes>
+    <copyright>Copyright © 2005 Steve Barker. Maintained by AdvancedREI, LLC.</copyright>
+    <tags>base10,base36,shortener</tags>
+    <dependencies>
+      <group targetFramework="net45" />
+      <group targetFramework="wp8" />
+      <group targetFramework="win8" />
+      <group targetFramework="wpa81" />
+      <group targetFramework="xamarin.ios" />
+      <group targetFramework="monotouch" />
+      <group targetFramework="monoandroid" />
+      <group targetFramework="netstandard1.0">
+        <dependency id="System.Runtime" version="4.1.0" />
+        <dependency id="System.Runtime.Extensions" version="4.1.0" />
+        <dependency id="System.Runtime.InteropServices" version="4.1.0" />
+        <dependency id="System.Runtime.Serialization.Primitives" version="4.1.1" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="Base36.NetStandard\bin\Release\netstandard1.0\Base36.NetStandard.dll" target="lib\netstandard1.0\" />
+    <file src="Base36.NetStandard\bin\Release\netstandard1.0\Base36.NetStandard.pdb" target="lib\netstandard1.0\" />
+    <file src="Base36.NetStandard\bin\Release\netstandard1.0\Base36.NetStandard.xml" target="lib\netstandard1.0\" />
+    <file src="Base36.NetStandard\**\*.cs" exclude="**\obj\**\*.*" target="src" />
+  </files>
+</package>
